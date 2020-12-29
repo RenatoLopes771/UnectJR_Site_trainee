@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Processo Seletivo Unect Jr 2021</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./index.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div id="topo">
+                <div id="banner" alt="Funcionários da Unect JR">
+                    <img id="simbolo-unect" src="./imagens/topo/simbolo azul.png" alt="Símbolo Unect JR">
+                    <h1 id="processo-seletivo">&#60;Processo Seletivo 2021&#62;</h1>
+                </div>
+
+                <div id="frases">
+                    <p>Uma&#8194;<strong>frase.</strong><br>
+                    Outra&#8194;<strong>frase.</strong><br>
+                    A terceira&#8194;<strong>frase.</strong></p>
+                </div>
+
+                <div id="inscricoes">
+                    <p>Inscrições abertas até o dia&#8194;<span style="color: #226ED8">06/11</span>!</p>
+                </div>
+
+                <a href="#"><img class="pointer" id="inscreva-se" src="./imagens/topo/Property 1=Default.png" alt="Inscreva-se"></a>
+                <a href="#"><img class="pointer" id="edital" src="./imagens/topo/button-free.png" alt="Edital"></a>
+
+                <div alt="Redes Sociais">
+                    <a href="https://www.facebook.com/UnectJr/"><img class="pointer" id="facebook" src="./imagens/topo/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/unectjr/"><img class="pointer" id="instagram" src="./imagens/topo/instagram.png" alt="Instagram"></a>
+                    <a href="https://br.linkedin.com/company/unect-jr."><img class="pointer" id="linkedin" src="./imagens/topo/linkedin.png" alt="Linkedin"></a>
+                </div>
+            </div>
+
+            <div class="form-popup" id="popup-perguntas">
+                <form action="" onsubmit="send()" class="form-container">
+                    <div id="popup-cinza">
+                        <h1>Pergunta pra gente &#128522;</h1>
+                    </div>
+                    
+                    <div id="popup-branco">
+                        <br>
+                        <label class="input-type" for="nome"><b>Nome</b></label><br>
+                        <input class="input-box" type="text" placeholder="Digite seu nome" name="nome" required>
+                        <br><br>
+                        <label class="input-type" for="email"><b>Email</b></label><br>
+                        <input class="input-box" type="email" placeholder="Digite seu e-mail (opcional)" name="email">
+                        <br><br>
+                        <label class="input-type" for="mensagem"><b>Mensagem</b></label><br>
+                        <input class="input-box" type="text" placeholder="Escreva aqui..." name="mensagem" required style="height: 135px">
+                        <br><br>
+                        <button id="cancelar" alt="Cancelar" type="submit" class="pointer" onclick="closeForm()"></button>
+                        <button id="enviar" alt="Enviar" type="submit" class="pointer"></button>
+                    </div>
+                </form>
+            </div> 
+        </header>
+
+        <section id="meio">
+            <div id="sobre">
+                <h1><strong>Sobre Nós</strong></h1>
+
+                <img src="./imagens/meio/sobre-bg.jpg" alt="Membros da Unect em posição estilo Avengers">
+
+                <div id="sobre-info">
+                    <p>A Unect Jr. é uma Empresa Júnior vinculada aos cursos de Computação da UTFPR-CP que desenvolve sites, aplicações mobile e web, e que busca, através da vivência empresarial, proporcionar aos seus membros o ambiente ideal para que eles se desenvolvam e apliquem os seus conhecimentos, que vão muito além da área de computação.</p>
+                </div>
+            </div>
+
+            <button id="duvidas" class="pointer" onclick="openForm()" alt="Envie sua dúvida"><img src="./imagens/meio/btn-float.png"></button>
+
+            <div id="meio-vagas">
+                <h1 id="vagas"><strong>Vagas</strong></h1>
+
+                <div class="areas">
+                    <div class="area-topo">
+                        <img src="./imagens/meio/design.png" alt="Ícone Design"><h1><strong>Design</strong> <span>Projetos</span></h1>
+                    </div>
+                    
+                    <p>Volutpat lacus nunc gravida scelerisque et, vitae vitae. Nibh tincidunt mi accumsan sapien. Accumsan, est arcu cum malesuada faucibus odio sit at. Sit feugiat amet dignissim lectus integer nec neque, aliquam.</p>
+                </div>
+
+                <div class="areas">
+                    <div class="area-topo">
+                        <img src="./imagens/meio/code.png" alt="Ícone Desenvolvedor"><h1><strong>Desenvolvedor</strong> <span>Projetos</span></h1>
+                    </div>
+                    
+                    <p>Euismod etiam condimentum nam non elit, dui cursus. Non vulputate donec fringilla lectus mauris, feugiat et. Magna est volutpat turpis velit bibendum volutpat. Venenatis a ut rutrum fusce mi, consequat ante consequat sed.</p>
+                </div>
+
+                <div class="areas">
+                    <div class="area-topo">
+                        <img src="./imagens/meio/megaphone.png" alt="Ícone Marketing"><h1><strong>Marketing</strong></h1>
+                    </div>
+                    
+                    <p>Vel quis justo, porttitor quis non aliquam non mi. Gravida orci dictum ullamcorper ut bibendum. Consequat malesuada ullamcorper libero, tortor. Gravida eu vel a morbi orci odio risus.</p>
+                </div>
+
+                <div class="areas">
+                    <div class="area-topo">
+                        <img src="./imagens/meio/id.png" alt="Ícone Administrativo/Financeiro"><h1><strong>Administrativo/Financeiro</strong></h1>
+                    </div>
+                    
+                    <p>Tempus, tortor, id leo arcu at adipiscing potenti viverra. Cras vitae pharetra nisi, nunc netus tincidunt. Lectus sit habitant amet interdum in ultrices. Consectetur urna sagittis, sed pretium.</p>
+                </div>
+
+                <div class="areas">
+                    <div class="area-topo">
+                        <img src="./imagens/meio/people.png" alt="Ícone Recusos Humanos"><h1><strong>Recusos Humanos</strong></h1>
+                    </div>
+                    
+                    <p>Auctor massa neque, nisi, placerat. Amet quis metus sed suscipit congue porta non vitae purus. Mauris sed donec sed neque cursus. Tincidunt diam purus sed aliquam cras habitasse pharetra.</p>
+                </div>
+
+                <div class="areas">
+                    <div class="area-topo">
+                        <img src="./imagens/meio/Vector.png" alt="Ícone Comercial"><h1><strong>Comercial</strong></h1>
+                    </div>
+                    
+                    <p>Scelerisque elementum in felis in quis mattis sed. Odio aliquam ultrices pellentesque morbi nibh amet ipsum. Nullam adipiscing ornare quam molestie tellus elementum.</p>
+                </div>
+            </div>
+
+            <div id="separator"></div>
+            <br><br><br><br><br><br><br><br>
+        </section>
+
+        <section id="meio2">
+            <div id="alumni">
+                <h1><strong>Onde estão nossos alumni?</strong></h1>
+
+                <img id="logo-samsung" src="./imagens/meio/meio2/samsung-logo.png" alt="Logo Samsung">
+                <img id="logo-google" src="./imagens/meio/meio2/google-logo.png" alt="Logo Google">
+                <img id="logo-microsoft" src="./imagens/meio/meio2/microsoft-logo.png" alt="Logo Microsoft">
+                <img id="logo-intel" src="./imagens/meio/meio2/intel-logo.png" alt="Logo Intel">
+                <img id="logo-ambev" src="./imagens/meio/meio2/ambev-logo.png" alt="Logo Ambev">
+            </div>
+        </section>
+
+        <section id="rodape">
+            <div id="rodape-esquerda" >
+                <a id="facebook-rodape" href="https://www.facebook.com/UnectJr/"><img src="./imagens/rodape/facebook-white.png" alt="Facebook"></a>
+                <a id="instagram-rodape" href="https://www.instagram.com/unectjr/"><img src="./imagens/rodape/instagram-white.png" alt="Instagram"></a>
+                <a id="linkedin-rodape" href="https://www.linkedin.com/company/unect-jr./"><img src="./imagens/rodape/linkedin-white.png" alt="Linkedin"></a>
+            </div>
+            <a id="unect-com" href="https://www.unect.com.br/"><p>unect.com.br</p></a>
+
+            <img id="emojis" src="./imagens/rodape/Group 25.png" alt="Emojis!">
+
+            <div id="rodape-direita">
+                <p id="rh-gmail">rh.unect@gmail.com</p>
+                <div id="rodape-direita-linha"></div>
+                <p id="copy-unect">&copy;2020 Unect Jr.</p>
+            </div>
+        </section>
+    </body>
+</html>

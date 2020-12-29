@@ -1,0 +1,727 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --g: 0%;
+  --c: 100%;
+}
+
+/* Fica cinza quando se abre dúvidas, volta ao normal quando a fecha */
+#topo,
+#meio,
+#rodape {
+  filter: grayscale(var(--g)) contrast(var(--c));
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+body {
+  overflow-x: hidden; /* Resolve um bug que coloca um espaço a mais na direita da página */
+}
+/* Há outro bug que faz o meio da página estar em 35% / 35vw
+
+/* Topo */
+
+#banner {
+  background: url(../imagens/topo/white-layer.png) center/cover,
+    url(../imagens/topo/hero-image.png) center/cover;
+
+  width: 100vw;
+  height: 554px;
+  position: relative;
+
+  z-index: 1;
+}
+
+#processo-seletivo {
+  /* brandBlack */
+  color: #111111;
+  opacity: 0.5;
+
+  font-family: "Ubuntu Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+
+  width: 192px;
+  height: 16px;
+  position: relative;
+
+  left: 144px;
+  top: 50px;
+
+  z-index: 2;
+}
+
+#simbolo-unect {
+  left: 100px;
+  top: 32px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#frases {
+  /* brandBlack */
+  color: #111111;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 48px;
+
+  width: 308px;
+  height: 144px;
+  left: 100px;
+  top: 180px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#inscricoes {
+  color: rgba(17, 17, 17, 0.5);
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+
+  width: 309px;
+  height: 23px;
+  left: 100px;
+  top: 344px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#inscreva-se {
+  width: 137px;
+  height: 45px;
+  left: 100px;
+  top: 392px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#edital {
+  width: 64.57px;
+  height: 21px;
+  left: 255px;
+  top: 404px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* --- Pop-up --- */
+
+.form-popup {
+  display: none; /* default não aparecendo */
+
+  z-index: 20;
+}
+
+#popup-perguntas {
+  background: #ffffff;
+  border: 1px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  width: 398px;
+  height: 522px;
+  left: 45vw;
+  top: 123px;
+  position: fixed;
+
+  z-index: 20;
+}
+
+#popup-cinza {
+  background: #ececec;
+  border-radius: 6px 6px 0px 0px;
+
+  width: 398px;
+  height: 99px;
+  left: 0px;
+  top: 0px;
+  position: relative;
+
+  z-index: 21;
+}
+
+#popup-branco {
+  left: 0px;
+  top: 0px;
+
+  position: relative;
+}
+
+#popup-perguntas h1 {
+  /* brandBlue */
+  color: #226ed8;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+
+  top: 46px;
+  left: 32px;
+  position: absolute;
+
+  z-index: 22;
+}
+
+.input-type {
+  /* brandBlack */
+  color: #111111;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+
+  left: 32px;
+  position: relative;
+
+  z-index: 22;
+}
+
+.input-box {
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+
+  width: 333px;
+  height: 42px;
+  left: 32px;
+  position: relative;
+
+  z-index: 22;
+}
+
+#cancelar {
+  background: url("../imagens/popup/Cancelar.png") no-repeat;
+  border: 0;
+
+  width: 63px;
+  height: 18px;
+  left: 235px;
+  top: 21px;
+  position: relative;
+}
+
+#enviar {
+  background: url("../imagens/popup/Enviar.png") no-repeat;
+  border: 0;
+
+  width: 47px;
+  height: 18px;
+  top: 21px;
+  left: 250px;
+  position: relative;
+}
+
+/* -------------- */
+
+#facebook {
+  width: 9.72px;
+  height: 20px;
+  right: 105.28px;
+  top: 227px;
+  position: absolute;
+
+  opacity: 0.7;
+
+  z-index: 2;
+}
+
+#instagram {
+  width: 20px;
+  height: 20px;
+  right: 101px;
+  top: 267px;
+  position: absolute;
+
+  opacity: 0.7;
+
+  z-index: 2;
+}
+
+#linkedin {
+  width: 20.92px;
+  height: 20px;
+  right: 100.8px;
+  top: 307px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+/* Meio */
+
+#meio {
+  /* brandWhite */
+  background-color: #fdfdfd;
+
+  width: 100vw;
+  position: relative;
+
+  z-index: 0;
+}
+
+#sobre {
+  width: 761px;
+  height: 338px;
+  left: 100px;
+  top: 80px;
+  right: 505px;
+  position: relative;
+
+  z-index: 1;
+}
+
+#sobre h1 {
+  /* brandBlack */
+  color: #111111;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+
+  width: 138px;
+  height: 34px;
+  left: 0px;
+  top: 0px;
+  position: relative;
+
+  z-index: 2;
+}
+
+#sobre img {
+  border-radius: 6px 0px 0px 6px;
+
+  width: 347px;
+  height: 272px;
+  left: 0px;
+  top: 66px;
+  position: absolute;
+
+  z-index: 3;
+}
+
+#sobre-info {
+  background-color: #f2f3f4;
+  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+
+  width: calc(414px + 347px);
+  height: 272px;
+  left: 0px;
+  top: 66px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#sobre-info p {
+  /* brandBlack */
+  color: #111111;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+
+  width: 334px;
+  height: 200px;
+  right: 42px;
+  bottom: 36px;
+  position: absolute;
+
+  opacity: 0.8;
+
+  z-index: 3;
+}
+
+#duvidas {
+  border: 0;
+  border-radius: 25px;
+
+  width: 50px;
+  height: 50px;
+  right: 100px;
+  top: 117px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#meio-vagas {
+  /* container da seção inteira */
+  left: 36px;
+  top: 157px; /* top 0px e z-index 20 para o quão irrelativo está na verdade */
+  position: relative;
+}
+
+#vagas {
+  /* h1 */
+  /* brandBlack */
+  color: #111111;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+
+  width: 84px;
+  height: 34px;
+  left: 64px;
+  top: 0px;
+  margin-bottom: 32px;
+  position: relative;
+
+  clear: both;
+}
+
+.areas {
+  display: block;
+  float: left;
+  width: 320px;
+  height: 185px; /* Colocar no máximo, senão quebra a seção! */
+  left: 64px;
+  margin-right: 64px;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.area-topo {
+  height: 25px;
+  top: 0px;
+  left: 0px;
+  margin-bottom: 16px;
+  display: block;
+  position: relative;
+}
+
+.areas img {
+  left: 0px;
+  top: 0px;
+  margin-right: 12.88px;
+  position: relative;
+}
+
+.areas h1 {
+  color: #226ed8;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+
+  left: 38px;
+  top: 0px;
+  position: absolute;
+}
+
+.areas span {
+  color: rgba(63, 61, 86, 0.5);
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.areas p {
+  /* brandBlack */
+  color: #111111;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  left: 0px;
+}
+
+#separator {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+
+  top: 140px;
+  right: 0px;
+  position: relative;
+  height: 1px;
+
+  z-index: 20;
+  clear: both;
+}
+
+/* Alumni */
+
+#meio2 {
+  background-color: #fdfdfd;
+
+  top: 0px;
+  width: 100vw;
+  height: 320px;
+  position: relative;
+
+  z-index: 0;
+}
+
+#alumni {
+  position: absolute;
+  height: 140px;
+  left: 35px;
+  top: 80px;
+
+  z-index: 1;
+}
+
+#alumni h1 {
+  /* brandBlack */
+  color: #111111;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 36px;
+
+  width: 364px;
+  height: 36px;
+  left: 65px;
+  top: 0px;
+  margin-right: 615px;
+  position: relative;
+
+  z-index: 2;
+  clear: both;
+}
+
+#alumni img {
+  display: block;
+  float: left;
+  left: 65px;
+  margin-right: 65px;
+  margin-top: 52px;
+  position: relative;
+
+  z-index: 3;
+}
+
+#logo-samsung {
+  width: 147px;
+  height: 48px;
+}
+
+#logo-google {
+  width: 143px;
+  height: 48px;
+}
+
+#logo-microsoft {
+  width: 180px;
+  height: 39px;
+}
+
+#logo-intel {
+  width: 96px;
+  height: 64px;
+}
+
+#logo-ambev {
+  width: 156px;
+  height: 39px;
+}
+
+#logo-ambev:after {
+  /* parecido com "clear: both;" */
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* Rodapé */
+
+#rodape {
+  background: #171717;
+
+  height: 428px;
+  left: 0px;
+  top: 104px;
+  position: relative;
+
+  z-index: 0;
+}
+
+#rodape-esquerda {
+  width: 91.92px;
+  height: 23px;
+  left: 100px;
+  top: 71px;
+  position: absolute;
+
+  z-index: 1;
+}
+
+#facebook-rodape {
+  width: 11.18px;
+  height: 23px;
+
+  left: 0px;
+  top: 0px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#instagram-rodape {
+  width: 23px;
+  height: 23px;
+
+  top: 0px;
+  left: 30px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#linkedin-rodape {
+  width: 20.92px;
+  height: 20px;
+
+  right: 0px;
+  top: 0px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#rodape p {
+  /* brandWhite */
+  color: #fdfdfd;
+  opacity: 0.7;
+
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+
+  height: 26px;
+
+  z-index: 2;
+}
+
+#unect-com {
+  top: 70px;
+  left: 224px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#emojis {
+  width: 88px;
+  height: 21px;
+  top: 70px;
+  left: 45%;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#rodape-direita {
+  width: 329px;
+  height: 26px;
+  top: 70px;
+  right: 5vw;
+  position: absolute;
+
+  z-index: 1;
+}
+
+#rh-gmail {
+  text-align: right;
+
+  width: 141px;
+  left: 1px;
+  top: 0px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#rodape-direita-linha {
+  border: 1px solid rgba(253, 253, 253, 0.3);
+  transform: rotate(-180deg);
+
+  width: 50px;
+  height: 0px;
+  left: 151px;
+  top: 13px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+#copy-unect {
+  width: 110px;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+
+  z-index: 2;
+}
+
+@media screen and (max-width: 1040px) {
+  #emojis {
+    display: none;
+  }
+
+  #rodape-direita {
+    top: 180px;
+    left: 98px;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  #rodape-direita {
+    top: 90px;
+    left: 20px;
+  }
+}
