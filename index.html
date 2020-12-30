@@ -37,7 +37,9 @@
                 </div>
             </div>
 
-            <div class="form-popup" id="popup-perguntas">
+            <button id="duvidas" class="pointer" onclick="openForm()" alt="Envie sua dúvida"><img src="./imagens/meio/btn-float.png"></button>
+
+            <div class="popup" id="popup-perguntas">
                 <form action="" onsubmit="send()" class="form-container">
                     <div id="popup-cinza">
                         <h1>Pergunta pra gente &#128522;</h1>
@@ -59,20 +61,23 @@
                     </div>
                 </form>
             </div> 
+
         </header>
 
         <section id="meio">
             <div id="sobre">
                 <h1><strong>Sobre Nós</strong></h1>
 
-                <img src="./imagens/meio/sobre-bg.jpg" alt="Membros da Unect em posição estilo Avengers">
+                <img id="img1" src="./imagens/meio/sobre-bg.jpg" alt="Rostos dos membros da unect em uma colagem informal">
+                <img id="img2" class="popup" src="./imagens/meio/team.jpg" alt="Membros da Unect em seu escritório">
+
+                <button id="button-left" class="pointer popup" onclick="slideButton()"></button>
+                <button id="button-right" class="pointer" onclick="slideButton()"></button>
 
                 <div id="sobre-info">
                     <p>A Unect Jr. é uma Empresa Júnior vinculada aos cursos de Computação da UTFPR-CP que desenvolve sites, aplicações mobile e web, e que busca, através da vivência empresarial, proporcionar aos seus membros o ambiente ideal para que eles se desenvolvam e apliquem os seus conhecimentos, que vão muito além da área de computação.</p>
                 </div>
             </div>
-
-            <button id="duvidas" class="pointer" onclick="openForm()" alt="Envie sua dúvida"><img src="./imagens/meio/btn-float.png"></button>
 
             <div id="meio-vagas">
                 <h1 id="vagas"><strong>Vagas</strong></h1>
