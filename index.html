@@ -51,12 +51,12 @@
                         <input class="input-box" type="text" placeholder="Digite seu nome" name="nome" required>
                         <br><br>
                         <label class="input-type" for="email"><b>Email</b></label><br>
-                        <input class="input-box" type="email" placeholder="Digite seu e-mail (opcional)" name="email">
+                        <input class="input-box" type="email" placeholder="Digite seu e-mail" name="email" required>
                         <br><br>
                         <label class="input-type" for="mensagem"><b>Mensagem</b></label><br>
-                        <input class="input-box" type="text" placeholder="Escreva aqui..." name="mensagem" required style="height: 135px">
+                        <textarea class="input-box input-area" name="mensagem" placeholder="Escreva aqui..." required></textarea>
                         <br><br>
-                        <button id="cancelar" alt="Cancelar" type="submit" class="pointer" onclick="closeForm()"></button>
+                        <button id="cancelar" alt="Cancelar" type="reset" class="pointer" onclick="closeForm()"></button>
                         <button id="enviar" alt="Enviar" type="submit" class="pointer"></button>
                     </div>
                 </form>

@@ -219,6 +219,11 @@ body {
   z-index: 22;
 }
 
+.input-area {
+  width: 333px;
+  height: 135px;
+}
+
 #cancelar {
   background: url("../imagens/popup/Cancelar.png") no-repeat;
   border: 0;
